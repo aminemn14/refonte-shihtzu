@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Sora";
+  src: url("../fonts/Sora.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Alinsa";
+  src: url("../fonts/Alinsa.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+}
