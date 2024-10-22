@@ -1,7 +1,7 @@
 const navbar = document.querySelector("#navbar");
 
 navbar.innerHTML = `
-  <nav class="p-4 md:p-8 lg:px-12 flex justify-between items-center shadow-md z-50 bg-bgColor">
+  <nav class="p-4 md:p-8 lg:px-12 flex justify-between items-center z-50 bg-bgColor transition-shadow duration-300">
     <div class="logo flex items-center">
       <img src="src/img/icon-shihtzu.svg" alt="logo" class="h-10 w-auto mr-2" />
       <h1 class="text-[1.9rem] text-body font-alinsa hidden md:block">SHIHTZU</h1>
@@ -26,7 +26,7 @@ navbar.innerHTML = `
       <span class="line w-6 h-[2px] bg-body block my-1.5 transition-all"></span>
     </div>
   </nav>
-  <div class="menubar absolute top-0 left-[-60%] flex justify-center items-start w-[60%] h-screen pt-[20%] bg-bgColor transition-all z-20 shadow-md">
+  <div class="menubar absolute top-0 left-[-60%] flex justify-center items-start w-[60%] h-screen pt-[20%] bg-bgColor transition-all z-60 shadow-md">
     <ul class="list-none">
       <li class="mb-8">
         <a href="/" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:bg-gray-100 transition-all">Home</a>
@@ -43,6 +43,16 @@ navbar.innerHTML = `
     </ul>
   </div>
 `;
+
+const handleScroll = () => {
+  if (window.scrollY > 0) {
+    navbar.querySelector("nav").classList.add("shadow-lg");
+  } else {
+    navbar.querySelector("nav").classList.remove("shadow-lg");
+  }
+};
+
+window.addEventListener("scroll", handleScroll);
 
 const mobileNav = document.querySelector(".hamburger");
 const menubar = document.querySelector(".menubar");

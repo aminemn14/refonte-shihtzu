@@ -1,10 +1,12 @@
 // src/js/main.js
 import HomePage from "../pages/home.page.js";
 import AboutPage from "../pages/about.page.js";
+import ContactPage from "../pages/contact.page.js";
 
 const routes = {
   "/": HomePage,
   "/about": AboutPage,
+  "/contact": ContactPage,
 };
 
 function renderPage(path) {

@@ -3,21 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Refonte Shihtzu</title>
+    <title>Shihtzu</title>
     <link rel="stylesheet" href="src/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
-    <script src="src/js/scroll.js"></script>
     <script src="tailwind.config.js"></script>
-    <script type="module">
-      import heroicons from "https://cdn.jsdelivr.net/npm/heroicons@2.1.5/+esm";
-    </script>
+    <script src="src/js/scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css"
+    />
     <link rel="icon" href="src/img/favicon-shihtzu.png" type="image/png" />
   </head>
-  <body class="bg-bgColor text-body">
-    <div id="navbar" class="sticky top-0"></div>
+  <body class="bg-bgColor text-body h-[80vh]">
+    <div
+      id="navbar"
+      class="sticky top-0"
+      style="z-index: 1000 !important"
+    ></div>
     <main class="p-4 md:p-8 lg:p-12" id="app"></main>
     <script src="src/components/navbar.components.js"></script>
-    <script type="module" src="src/js/main.js"></script>
+    <script type="module" src="src/js/app.js"></script>
   </body>
 </html>
