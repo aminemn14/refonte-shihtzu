@@ -1,14 +1,10 @@
 // src/js/main.js
 import HomePage from "../pages/home.page.js";
-import ServicesPage from "../pages/services.page.js"; // À créer
-import BlogPage from "../pages/blog.page.js"; // À créer
-import ContactPage from "../pages/contact.page.js";
+import AboutPage from "../pages/about.page.js";
 
 const routes = {
   "/": HomePage,
-  "/services": ServicesPage,
-  "/blog": BlogPage,
-  "/contact": ContactPage,
+  "/about": AboutPage,
 };
 
 function renderPage(path) {
