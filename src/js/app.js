@@ -34,3 +34,14 @@ $(document).ready(function () {
     },
   });
 });
+
+function calculateExperience() {
+  const currentYear = new Date().getFullYear();
+  const startYear = 1975;
+  const experienceYears = currentYear - startYear;
+
+  document.getElementById("year-calculator").textContent = experienceYears;
+}
+
+// S'assurer que la fonction se charge après le DOM
+document.addEventListener("DOMContentLoaded", calculateExperience);
