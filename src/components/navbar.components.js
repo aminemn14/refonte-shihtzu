@@ -1,23 +1,24 @@
 const navbar = document.querySelector("#navbar");
 
 navbar.innerHTML = `
+
   <nav class="p-4 md:p-8 lg:px-12 flex justify-between items-center z-50 bg-bgColor transition-shadow duration-300">
-    <div class="logo flex items-center">
+    <a href="/"><div class="logo flex items-center">
       <img src="src/img/icon-shihtzu.svg" alt="logo" class="h-10 w-auto mr-2" />
       <h1 class="text-2xl sm:text-3xl text-body font-alinsa">SHIHTZU</h1>
-    </div>
+    </div></a>
     <ul class="hidden md:flex list-none items-center">
       <li class="ml-6">
         <a href="/" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Accueil</a>
       </li>
       <li class="ml-6">
-        <a href="/pension" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Pension</a>
+        <a href="/pension.html" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Pension</a>
       </li>
       <li class="ml-6">
-        <a href="/blog" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Blog</a>
+        <a href="/blog.html" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Blog</a>
       </li>
       <li class="ml-6">
-        <a href="/contact" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Contact</a>
+        <a href="/contact.html" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Contact</a>
       </li>
     </ul>
     <div class="hamburger block md:hidden cursor-pointer">
@@ -33,13 +34,13 @@ navbar.innerHTML = `
         <a href="/" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Accueil</a>
       </li>
       <li class="mb-8">
-        <a href="/services" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Pension</a>
+        <a href="/pension.html" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Pension</a>
       </li>
       <li class="mb-8">
-        <a href="/blog" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Blog</a>
+        <a href="/blog.html" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Blog</a>
       </li>
       <li class="mb-8">
-        <a href="/contact" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Contact</a>
+        <a href="/contact.html" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Contact</a>
       </li>
     </ul>
   </div>

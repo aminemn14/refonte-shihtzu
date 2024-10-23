@@ -1,37 +1,36 @@
-// src/js/main.js
-import HomePage from "../pages/home.page.js";
-import AboutPage from "../pages/about.page.js";
-import ContactPage from "../pages/contact.page.js";
-
-const routes = {
-  "/": HomePage,
-  "/about": AboutPage,
-  "/contact": ContactPage,
-};
-
-function renderPage(path) {
-  const app = document.getElementById("app");
-  const page = routes[path] ? routes[path]() : `<h2>Page non trouvée</h2>`;
-  app.innerHTML = page;
-}
-
-function handleRoute() {
-  const path = window.location.pathname;
-  renderPage(path);
-}
-
-// Initial render
-window.addEventListener("DOMContentLoaded", handleRoute);
-
-// Handle navigation
-window.addEventListener("popstate", handleRoute);
-
-// Optional: Example of changing route
-document.addEventListener("click", (e) => {
-  if (e.target.matches("a")) {
-    e.preventDefault();
-    const path = e.target.getAttribute("href");
-    window.history.pushState({}, "", path);
-    renderPage(path);
-  }
+$(document).ready(function () {
+  var mySwiper = new Swiper(".gallery-top", {
+    spaceBetween: 20,
+    slidesPerView: 3,
+    parallax: true,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      1920: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1400: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        centeredSlides: true,
+      },
+      900: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+        centeredSlides: true,
+      },
+      200: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
+    },
+  });
 });
