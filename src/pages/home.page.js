@@ -1,7 +1,7 @@
 export default function HomePage() {
   return `
-      <section id="hero">
-        <div class="flex flex-1 w-full flex-col items-center justify-center text-center px-4 py-20 bg-bgColorHover rounded-xl h-[75vh]">
+      <section id="hero" class="px-4 md:px-8 lg:px-12">
+        <div class="flex flex-1 w-full flex-col items-center justify-center text-center px-4 py-20 bg-bgColorHover rounded-xl h-[80vh]">
   <a href="/contact"
     class="flex items-center border border-accent rounded-lg py-2 px-4 hover:bg-accent text-accent hover:text-bgColor text-sm mb-5 transition duration-300 ease-in-out ">
     Nous contacter 
@@ -23,32 +23,28 @@ export default function HomePage() {
    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   </h2>
   <a class="bg-accent rounded-xl text-bgColor font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-accentHover transition duration-300 ease-in-out"
-    href="">Adopter un chien !</a>
+    href="">Adopter un chiot !</a>
 </div>
       </section>
 
 
 
 
-     <section id="staff">
+     <section id="staff" class="p-4 md:p-8 lg:p-12">
 	<div class="flex items-center justify-center min-h-screen ">
 		<div class="flex flex-col">
 			<div class="flex flex-col mt-8">
-				<!-- Meet the Team -->
 				<div class="container max-w-7xl px-4">
-					<!-- Section Header -->
-					<div class="flex flex-wrap justify-center text-center mb-24">
+					<div class="flex flex-wrap justify-center text-center mb-16">
 						<div class="w-full lg:w-6/12 px-4">
-							<!-- Header -->
 							<h1 class="text-gray-900 text-4xl font-bold mb-8">Rencontrez l'équipe</h1>
-							<!-- Description -->
 							<p class="text-gray-700 text-lg font-light">
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								Mme Monique DURUPT Aurélie et sa fille Mme Aurélie FEUERSTEIN vous attendent à leur élevage.
 							</p>
 						</div>
 					</div>
 					<!-- Team Members -->
-					<div class="flex flex-wrap">
+					<div class="flex flex-wrap justify-center">
 						<!-- Member #1 -->
 						<div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
 							<div class="flex flex-col">
@@ -58,11 +54,6 @@ export default function HomePage() {
 								<div class="text-center mt-6">
 									<!-- Name -->
 									<h1 class="text-gray-900 text-xl font-bold mb-1">Monique DURUPT</h1>
-									<!-- Title -->
-									<div class="text-gray-700 font-light mb-2">
-										Lorem Ipsum
-									</div>
-									
 								</div>
 							</div>
 						</div>
@@ -75,48 +66,11 @@ export default function HomePage() {
 								<div class="text-center mt-6">
 									<!-- Name -->
 									<h1 class="text-gray-900 text-xl font-bold mb-1">Aurélie FEUERSTEIN</h1>
-									<!-- Title -->
-									<div class="text-gray-700 font-light mb-2">
-										Lorem Ipsum
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Member #3 -->
-						<div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
-							<div class="flex flex-col">
-								<!-- Avatar -->
-								<a href="#" class="mx-auto"><img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"src="https://images.unsplash.com/photo-1634193295627-1cdddf751ebf?fit=clamp&w=400&h=400&q=80"></a>
-								<!-- Details -->
-								<div class="text-center mt-6">
-									<!-- Name -->
-									<h1 class="text-gray-900 text-xl font-bold mb-1">Kenji Milton</h1>
-									<!-- Title -->
-									<div class="text-gray-700 font-light mb-2">
-										Lorem Ipsum
-									</div>
-									
-								</div>
-							</div>
-						</div>
-						<!-- Member #4 -->
-						<div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
-							<div class="flex flex-col">
-								<!-- Avatar -->
-								<a href="#" class="mx-auto"><img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"src="https://images.unsplash.com/photo-1635003913011-95971abba560?fit=clamp&w=400&h=400&q=80"></a>
-								<!-- Details -->
-								<div class="text-center mt-6">
-									<!-- Name -->
-									<h1 class="text-gray-900 text-xl font-bold mb-1">Doesn't matter</h1>
-									<!-- Title -->
-									<div class="text-gray-700 font-light mb-2">
-										Lorem Ipsum
-									</div>
-									
 								</div>
 							</div>
 						</div>
 					</div>
+					<div class="flex justify-center mt-24"><p class="text-warning text-2xl">Visites uniquement sur Rendez-Vous du Lundi au Samedi</p></div>
 				</div>
 			</div>
 		</div>

@@ -20,6 +20,14 @@ tailwind.config = {
         primaryHover: "hsl(29, 59%, 60%)",
         secondaryHover: "hsl(29, 78%, 83%)",
         accentHover: "hsl(29, 97%, 67%)",
+
+        // Couleurs des alertes
+        warning: "hsl(0, 84%, 60%)",
+        valid: "hsl(142, 71%, 45%)",
+
+        // Hover ouleurs des alertes
+        warningHover: "hsl(0, 84%, 70%)",
+        validHover: "hsl(142, 71%, 55%)",
       },
       fontFamily: {
         sora: ["Sora", "sans-serif"],
