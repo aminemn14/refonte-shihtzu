@@ -43,5 +43,27 @@ function calculateExperience() {
   document.getElementById("year-calculator").textContent = experienceYears;
 }
 
-// S'assurer que la fonction se charge après le DOM
 document.addEventListener("DOMContentLoaded", calculateExperience);
+
+const gallery = document.querySelector(".gallery");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightbox-image");
+const closeButton = document.getElementById("close");
+
+gallery.addEventListener("click", (e) => {
+  if (e.target.classList.contains("gallery-image")) {
+    const imageSrc = e.target.src;
+    lightboxImage.src = imageSrc;
+    lightbox.style.display = "flex";
+  }
+});
+
+closeButton.addEventListener("click", () => {
+  lightbox.style.display = "none";
+});
+
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = "none";
+  }
+});
