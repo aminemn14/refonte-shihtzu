@@ -6,7 +6,6 @@
     <title>Shihtzu</title>
     <link rel="stylesheet" href="src/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
     <script src="tailwind.config.js"></script>
     <script src="src/js/scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
@@ -82,13 +81,13 @@
           </h2>
           <a
             class="bg-bgColor rounded-xl text-accent hover:text-bgColor font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-accent transition duration-300 ease-in-out"
-            href=""
-            >Adopter un chiot</a
+            href="#staff"
+            >Découvrir l'équipe</a
           >
         </div>
       </section>
 
-      <section id="staff" class="my-48">
+      <section id="staff" class="py-24 lg:py-48">
         <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
           <div
             class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1"
@@ -121,7 +120,7 @@
                   class="w-full flex-col justify-start lg:items-start items-center gap-3 flex"
                 >
                   <h2
-                    class="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center"
+                    class="text-gray-900 text-4xl font-bold leading-normal lg:text-start text-center"
                   >
                     Rencontrez l'équipe
                   </h2>
@@ -136,9 +135,7 @@
                   class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex"
                 >
                   <div class="flex-col justify-start items-start inline-flex">
-                    <h3
-                      class="text-gray-900 text-4xl font-bold font-manrope leading-normal"
-                    >
+                    <h3 class="text-gray-900 text-4xl font-bold leading-normal">
                       + de <span id="year-calculator"></span> ans
                     </h3>
                     <h6
@@ -161,72 +158,79 @@
         </div>
       </section>
 
-      <section id="conseils" class="my-48">
+      <section id="conseils" class="py-24 lg:py-12">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2
-            class="font-manrope text-4xl font-bold text-body text-center mb-14"
-          >
+          <h2 class="text-4xl font-bold text-body text-center mb-14">
             Nos conseils avant d'adopter
           </h2>
           <div
-            class="flex justify-center mb-14 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8"
+            id="blog"
+            class="flex justify-center mb-8 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8"
           >
             <div
-              class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-bgColorHover rounded-2xl p-5 transition-all duration-300 hover:border-accent"
+              class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-bgColorHover rounded-2xl p-5 transition-all duration-300 hover:border-accent hover:shadow-lg"
             >
-              <div class="flex items-center mb-6">
-                <img
-                  src="src/img/education-chiot.jpg"
-                  class="rounded-lg w-full aspect-[16/9] object-cover"
-                />
-              </div>
-              <div class="block">
-                <h4 class="text-body font-medium leading-8 mb-9">
-                  Éduquer un chiot
-                </h4>
-                <div class="flex items-center justify-between font-medium">
-                  <h6 class="text-sm text-bodyGray">Par les webmasters</h6>
-                  <span class="text-sm text-accent">10/1927</span>
+              <a href="article1.html">
+                <div class="flex items-center mb-6 rounded-lg overflow-hidden">
+                  <img
+                    src="src/img/blog-education.jpg"
+                    class="w-full aspect-[16/9] object-cover transition-transform duration-300 ease-in-out group-hover:scale-125 group-hover:rotate-3"
+                  />
                 </div>
-              </div>
+                <div class="block">
+                  <h4 class="text-body font-medium leading-8 mb-9">
+                    Éduquer un chiot
+                  </h4>
+                  <div class="flex items-center justify-between font-medium">
+                    <h6 class="text-sm text-bodyGray">Par les webmasters</h6>
+                    <span class="text-sm text-accent">10/2024</span>
+                  </div>
+                </div>
+              </a>
             </div>
+
             <div
-              class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-bgColorHover rounded-2xl p-5 transition-all duration-300 hover:border-accent"
+              class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-bgColorHover rounded-2xl p-5 transition-all duration-300 hover:border-accent hover:shadow-lg"
             >
-              <div class="flex items-center mb-6">
-                <img
-                  src="https://pagedone.io/asset/uploads/1696244579.png"
-                  class="rounded-lg w-full aspect-[16/9] object-cover"
-                />
-              </div>
-              <div class="block">
-                <h4 class="text-body font-medium leading-8 mb-9">
-                  Éducation à la propreté
-                </h4>
-                <div class="flex items-center justify-between font-medium">
-                  <h6 class="text-sm text-bodyGray">Par les webmasters</h6>
-                  <span class="text-sm text-accent">04/1885</span>
+              <a href="article2.html">
+                <div class="flex items-center mb-6 rounded-lg overflow-hidden">
+                  <img
+                    src="src/img/blog-proprete.jpg"
+                    class="w-full aspect-[16/9] object-cover transition-transform duration-300 ease-in-out group-hover:scale-125 group-hover:rotate-3"
+                  />
                 </div>
-              </div>
+                <div class="block">
+                  <h4 class="text-body font-medium leading-8 mb-9">
+                    Éducation à la propreté
+                  </h4>
+                  <div class="flex items-center justify-between font-medium">
+                    <h6 class="text-sm text-bodyGray">Par les webmasters</h6>
+                    <span class="text-sm text-accent">04/2024</span>
+                  </div>
+                </div>
+              </a>
             </div>
+
             <div
-              class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-bgColorHover rounded-2xl p-5 transition-all duration-300 hover:border-accent"
+              class="group cursor-pointer w-full max-lg:max-w-xl lg:w-1/3 border border-bgColorHover rounded-2xl p-5 transition-all duration-300 hover:border-accent hover:shadow-lg"
             >
-              <div class="flex items-center mb-6">
-                <img
-                  src="https://pagedone.io/asset/uploads/1696244619.png"
-                  class="rounded-lg w-full aspect-[16/9]object-cover"
-                />
-              </div>
-              <div class="block">
-                <h4 class="text-body font-medium leading-8 mb-9">
-                  Gamelle en Plastique ou Inox ?
-                </h4>
-                <div class="flex items-center justify-between font-medium">
-                  <h6 class="text-sm text-bodyGray">Par les webmasters</h6>
-                  <span class="text-sm text-accent">02/1362</span>
+              <a href="article3.html">
+                <div class="flex items-center mb-6 rounded-lg overflow-hidden">
+                  <img
+                    src="src/img/blog-gamelle.jpg"
+                    class="w-full aspect-[16/9] object-cover transition-transform duration-300 ease-in-out group-hover:scale-125 group-hover:rotate-3"
+                  />
                 </div>
-              </div>
+                <div class="block">
+                  <h4 class="text-body font-medium leading-8 mb-9">
+                    Gamelle en Plastique ou Inox ?
+                  </h4>
+                  <div class="flex items-center justify-between font-medium">
+                    <h6 class="text-sm text-bodyGray">Par les webmasters</h6>
+                    <span class="text-sm text-accent">02/2024</span>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
           <a
@@ -237,7 +241,7 @@
         </div>
       </section>
 
-      <section id="swiper" class="my-48">
+      <section id="swiper" class="py-24 lg:py-12">
         <div class="overflow-hidden">
           <div class="flex flex-wrap justify-center text-center">
             <div class="w-full lg:w-6/12 px-4">
@@ -251,7 +255,7 @@
               </p>
             </div>
           </div>
-          <!--Slider Wrapper-->
+
           <div class="mx-auto w-auto relative">
             <button
               id="slider-button-left"
@@ -339,7 +343,7 @@
 
       <div id="app"></div>
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer" class="mt-12"></footer>
     <script
       src="https://website-widgets.pages.dev/dist/sienna.min.js"
       defer
