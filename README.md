@@ -22,5 +22,5 @@ Refonte Shihtzu est un projet de cours ayant pour objectif de moderniser et amé
 
 1. Clonez le dépôt :
    ```bash
-   git clone <URL_DU_DEPOT>
+   git clone https://github.com/aminemn14/refonte-shihtzu.git
    ```
