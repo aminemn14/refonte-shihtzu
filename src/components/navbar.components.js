@@ -2,7 +2,7 @@ const navbar = document.querySelector("#navbar");
 
 navbar.innerHTML = `
 
-  <nav class="p-4 md:p-8 lg:px-12 flex justify-between items-center z-50 bg-bgColor transition-shadow duration-300">
+  <nav class="p-4 md:p-8 lg:px-12 flex justify-between items-center z-89 bg-bgColor transition-shadow duration-300">
     <a href="/"><div class="logo flex items-center">
       <img src="src/img/icon-shihtzu.svg" alt="logo" class="h-10 w-auto mr-2" />
       <h1 class="text-2xl sm:text-3xl text-body font-alinsa">SHIHTZU</h1>
@@ -28,7 +28,7 @@ navbar.innerHTML = `
     </div>
   </nav>
   
-  <div class="menubar absolute top-0 left-[-60%] flex justify-center items-start w-[40%] h-screen pt-[20%] bg-bgColor transition-all z-60 shadow-md">
+  <div class="menubar absolute top-0 left-[-60%] flex justify-center items-start w-[40%] h-screen pt-[20%] bg-bgColor transition-all z-90 shadow-md">
     <ul class="list-none">
       <li class="mb-8">
         <a href="/" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Accueil</a>

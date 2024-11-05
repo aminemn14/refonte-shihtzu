@@ -11,7 +11,7 @@ swiper.innerHTML = `
 				</p>
 			</div>
 		</div>
-		<!--Slider Wrapper-->
+
 		<div class="mx-auto w-auto relative">
 			<button id="slider-button-left" class="absolute left-0 top-1/2 -translate-y-1/2 swiper-button-prev w-11 h-11 p-3 xl:flex hidden shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] items-center justify-center border border-primary rounded-xl group hover:bg-primaryHover transition-all duration-300 ease-in-out">
 				<svg class="text-primary group-hover:text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
