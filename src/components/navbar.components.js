@@ -3,22 +3,22 @@ const navbar = document.querySelector("#navbar");
 navbar.innerHTML = `
 
   <nav class="p-4 md:p-8 lg:px-12 flex justify-between items-center z-89 bg-bgColor transition-shadow duration-300">
-    <a href="/"><div class="logo flex items-center">
+    <a href="index.html"><div class="logo flex items-center">
       <img src="src/img/icon-shihtzu.svg" alt="logo" class="h-10 w-auto mr-2" />
       <h1 class="text-2xl sm:text-3xl text-body font-alinsa">SHIHTZU</h1>
     </div></a>
     <ul class="hidden md:flex list-none items-center">
       <li class="ml-6">
-        <a href="/" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Accueil</a>
+        <a href="index.html" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Accueil</a>
       </li>
       <li class="ml-6">
-        <a href="/pension.html" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Pension</a>
+        <a href="pension.html" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Pension</a>
       </li>
       <li class="ml-6">
-        <a href="/blog.html" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Blog</a>
+        <a href="blog.html" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Blog</a>
       </li>
       <li class="ml-6">
-        <a href="/contact.html" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Contact</a>
+        <a href="contact.html" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Contact</a>
       </li>
     </ul>
     <div class="hamburger block md:hidden cursor-pointer">
@@ -31,16 +31,16 @@ navbar.innerHTML = `
   <div class="menubar absolute top-0 left-[-60%] flex justify-center items-start w-[40%] h-screen pt-[20%] bg-bgColor transition-all z-90 shadow-md">
     <ul class="list-none">
       <li class="mb-8">
-        <a href="/" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Accueil</a>
+        <a href="index.html" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Accueil</a>
       </li>
       <li class="mb-8">
-        <a href="/pension.html" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Pension</a>
+        <a href="pension.html" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Pension</a>
       </li>
       <li class="mb-8">
-        <a href="/blog.html" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Blog</a>
+        <a href="blog.html" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Blog</a>
       </li>
       <li class="mb-8">
-        <a href="/contact.html" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Contact</a>
+        <a href="contact.html" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Contact</a>
       </li>
     </ul>
   </div>
