@@ -11,6 +11,9 @@ navbar.innerHTML = `
       <li class="ml-6">
         <a href="index.html" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Accueil</a>
       </li>
+       <li class="ml-6">
+        <a href="about.html" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">À propos</a>
+      </li>
       <li class="ml-6">
         <a href="pension.html" class="text-body text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Pension</a>
       </li>
@@ -32,6 +35,9 @@ navbar.innerHTML = `
     <ul class="list-none">
       <li class="mb-8">
         <a href="index.html" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Accueil</a>
+      </li>
+      <li class="mb-8">
+        <a href="about.html" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">À propos</a>
       </li>
       <li class="mb-8">
         <a href="pension.html" class="text-black text-[95%] font-normal py-1 px-2 rounded hover:text-primary transition duration-300">Pension</a>
