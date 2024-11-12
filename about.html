@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shihtzu - Contact</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="tailwind.config.js"></script>
+    <script src="src/js/scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css"
+    />
+    <link rel="icon" href="src/img/favicon-shihtzu.png" type="image/png" />
+  </head>
+  <body class="bg-bgColor text-body">
+    <div id="warning"></div>
+    <div
+      id="navbar"
+      style="
+        z-index: 1000 !important;
+        position: sticky !important;
+        top: 0 !important;
+      "
+    ></div>
+    <main>
+      <section class="py-14 lg:py-24 relative z-0 bg-bgColor">
+        <div
+          class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center"
+        >
+          <h1
+            class="max-w-2xl mx-auto text-center font-bold text-4xl text-gray-900 mb-5 md:text-5xl md:leading-normal"
+          >
+            Recontrez l'équipe des
+            <span class="text-accent">Poupons Frisés</span>
+          </h1>
+          <p
+            class="max-w-sm mx-auto text-center text-base font-normal leading-7 text-gray-500 mb-9"
+          >
+            Découvrez ceux qui font grandir votre expérience.
+          </p>
+        </div>
+      </section>
+
+      <section class="py-14 lg:py-24 relative">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-9">
+            <div class="img-box">
+              <img
+                src="src/img/about-image.jpg"
+                alt="About Photo"
+                class="max-lg:mx-auto object-cover rounded-2xl"
+              />
+            </div>
+            <div class="lg:pl-[100px] flex items-center">
+              <div class="data w-full">
+                <h2
+                  class="font-bold text-4xl lg:text-5xl text-black mb-9 max-lg:text-center relative"
+                >
+                  À propos de nous
+                </h2>
+                <p
+                  class="font-normal text-xl leading-8 text-gray-500 max-lg:text-center max-w-2xl mx-auto"
+                >
+                  Monique DURUPT et Aurélie FEUERSTEIN sont des éleveuses
+                  professionnelles spécialisées dans la vente de chiots. Leur
+                  passion pour les animaux et leur savoir-faire leur permettent
+                  de vous offrir des conseils précieux sur la race qui vous
+                  intéresse ainsi que des chiots de qualité.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div
+            class="lg:py-14 lg:px-20 p-10 rounded-2xl bg-gradient-to-r from-secondary to-accent flex items-center justify-between flex-col lg:flex-row"
+          >
+            <div class="block text-center mb-5 lg:text-left lg:mb-0">
+              <h2 class="text-4xl text-white font-semibold mb-5 lg:mb-2">
+                Contactez-nous
+              </h2>
+              <p class="text-xl text-bgColor">
+                N'hésitez pas à nous contacter pour toute demande ou idée.
+              </p>
+            </div>
+            <a
+              href="contact.html"
+              class="flex items-center gap-2 bg-white rounded-full shadow-sm text-lg text-accent font-semibold py-4 px-8 transition-all duration-500"
+              >Nous contacter
+              <svg
+                width="19"
+                height="14"
+                viewBox="0 0 19 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.75 7L16.4167 7M11.8333 12.5L16.6852 7.64818C16.9907 7.34263 17.1435 7.18985 17.1435 7C17.1435 6.81015 16.9907 6.65737 16.6852 6.35182L11.8333 1.5"
+                  stroke="#FD9A40"
+                  stroke-width="2.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="mt-12"></footer>
+    <script
+      src="https://website-widgets.pages.dev/dist/sienna.min.js"
+      defer
+    ></script>
+    <script src="src/components/navbar.components.js"></script>
+    <script src="src/components/warning.components.js"></script>
+    <script src="src/components/footer.components.js"></script>
+    <script src="src/components/swiper.components.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
+    <script type="module" src="src/js/app.js"></script>
+  </body>
+</html>
