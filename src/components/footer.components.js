@@ -23,25 +23,24 @@ footer.innerHTML = `
 					<div class="mb-10 lg:mb-0">
 						<a href="index.html"><h4 class="text-lg text-gray-900 font-medium mb-7">Shihtzu</h4></a>
 						<ul class="text-sm transition-all duration-500">
+							<li class="mb-6"><a href="about.html" class="text-gray-600 hover:text-gray-900">À propos</a></li>
 							<li class="mb-6"><a href="pension.html" class="text-gray-600 hover:text-gray-900">Pension</a></li>
-							<li class="mb-6"><a href="blog.html" class="text-gray-600 hover:text-gray-900">Blog</a></li>
-							<li><a contact.html" class="text-gray-600 hover:text-gray-900">Contact</a></li>
+							<li><a href="blog.html" class="text-gray-600 hover:text-gray-900">Blog</a></li>
 						</ul>
 					</div>
 					<div class="mb-10 lg:mb-0">
 						<h4 class="text-lg text-gray-900 font-medium mb-7">Blog</h4>
 						<ul class="text-sm transition-all duration-500">
-							<li class="mb-6"><a href="javascript:;" class="text-gray-600 hover:text-gray-900">Article 1</a></li>
-							<li class="mb-6"><a href="javascript:;" class="text-gray-600 hover:text-gray-900">Article 2</a></li>
-							<li><a href="javascript:;" class="text-gray-600 hover:text-gray-900">Article 3</a></li>
+							<li class="mb-6"><a href="article1.html" class="text-gray-600 hover:text-gray-900">Article 1</a></li>
+							<li class="mb-6"><a href="article2.html" class="text-gray-600 hover:text-gray-900">Article 2</a></li>
+							<li><a href="article3.html" class="text-gray-600 hover:text-gray-900">Article 3</a></li>
 						</ul>
 					</div>
 					<div class="mb-10 lg:mb-0">
 						<h4 class="text-lg text-gray-900 font-medium mb-7">Contact</h4>
 						<ul class="text-sm transition-all duration-500">
-							<li class="mb-6"><a href="javascript:;" class="text-gray-600 hover:text-gray-900">Lorem Ipsum</a></li>
-							<li class="mb-6"><a href="javascript:;" class="text-gray-600 hover:text-gray-900">Lorem Ipsum</a></li>
-							<li><a href="javascript:;" class="text-gray-600 hover:text-gray-900">Lorem Ipsum</a></li>
+							<li class="mb-6"><a href="tel:0633087438" class="text-gray-600 hover:text-gray-900">06 33 08 74 38</a></li>
+							<li class="mb-6"><a href="mailto:contact@shihtzu.fr" class="text-gray-600 hover:text-gray-900">contact@shihtzu.fr</a></li>
 						</ul>
 					</div>
 				</div>
