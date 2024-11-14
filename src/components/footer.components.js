@@ -9,7 +9,7 @@ footer.innerHTML = `
 					<img src="src/img/logo-black.svg" class="h-10 w-auto" />
 				</a>
 				<p class="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">
-					Lorem ipsum dolor sit amet consectetur 
+					Des chiots élevés avec soin et amour
 				</p>
 				<a href="contact.html" class="inline-flex items-center border border-accent rounded-lg py-2 px-4 bg-accent hover:bg-accentHover text-bgColor text-sm mb-5 transition duration-300 ease-in-out">
 					Nous contacter
