@@ -103,7 +103,13 @@
                     </h5>
                   </a>
 
-                  <a href="javascript:;" class="flex items-center mb-6 group">
+                  <a
+                    href="https://maps.app.goo.gl/6yJsJxMRV1KH3PT87"
+                    class="flex items-center mb-6 group"
+                    onmouseover="showMapModal(event)"
+                    onmousemove="moveMapModal(event)"
+                    onmouseout="hideMapModal()"
+                  >
                     <svg
                       width="30"
                       height="30"
@@ -127,6 +133,22 @@
                       7 Route de Nitting, 57400 Hesse
                     </h5>
                   </a>
+
+                  <div
+                    id="mapModal"
+                    class="absolute bg-white border border-gray-300 p-2 rounded-lg shadow-lg opacity-0 pointer-events-none transition-opacity duration-300 z-50"
+                  >
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.016387041845!2d7.048901409376819!3d48.68605134316895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794118b3f9a7e09%3A0x8e22afd0155c9832!2s7%20Rte%20de%20Nitting%2C%2057400%20Hesse!5e0!3m2!1sfr!2sfr!4v1731571416827!5m2!1sfr!2sfr"
+                      width="300"
+                      height="200"
+                      class="border-0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+
                   <div
                     class="flex items-center justify-center border-t border-gray-100 pt-6"
                   >
@@ -179,6 +201,7 @@
     <script src="src/components/swiper.components.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
+    <script src="src/js/map.js"></script>
     <script type="module" src="src/js/app.js"></script>
   </body>
 </html>
