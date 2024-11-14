@@ -40,7 +40,10 @@ function calculateExperience() {
   const startYear = 1975;
   const experienceYears = currentYear - startYear;
 
-  document.getElementById("year-calculator").textContent = experienceYears;
+  const yearCalculator = document.getElementById("year-calculator");
+  if (yearCalculator) {
+    yearCalculator.textContent = experienceYears;
+  }
 }
 
 document.addEventListener("DOMContentLoaded", calculateExperience);
@@ -50,20 +53,26 @@ const lightbox = document.getElementById("lightbox");
 const lightboxImage = document.getElementById("lightbox-image");
 const closeButton = document.getElementById("close");
 
-gallery.addEventListener("click", (e) => {
-  if (e.target.classList.contains("gallery-image")) {
-    const imageSrc = e.target.src;
-    lightboxImage.src = imageSrc;
-    lightbox.style.display = "flex";
-  }
-});
+if (gallery) {
+  gallery.addEventListener("click", (e) => {
+    if (e.target.classList.contains("gallery-image")) {
+      const imageSrc = e.target.src;
+      if (lightboxImage) lightboxImage.src = imageSrc;
+      if (lightbox) lightbox.style.display = "flex";
+    }
+  });
+}
 
-closeButton.addEventListener("click", () => {
-  lightbox.style.display = "none";
-});
+if (closeButton) {
+  closeButton.addEventListener("click", () => {
+    if (lightbox) lightbox.style.display = "none";
+  });
+}
 
-lightbox.addEventListener("click", (e) => {
-  if (e.target === lightbox) {
-    lightbox.style.display = "none";
-  }
-});
+if (lightbox) {
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = "none";
+    }
+  });
+}
