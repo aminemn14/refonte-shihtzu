@@ -1,18 +1,41 @@
-const lenis = new Lenis({
-  duration: 1.2,
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("main > section");
 
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  const fadeInOnScroll = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove("opacity-0", "translate-y-8");
+        observer.unobserve(entry.target);
+      }
+    });
+  };
 
-  direction: "vertical",
+  const observer = new IntersectionObserver(fadeInOnScroll, {
+    threshold: 0.1,
+  });
 
-  gestureDirection: "vertical",
-  smooth: true,
-
-  mouseMultiplier: 1,
-
-  smoothTouch: false,
-
-  touchMultiplier: 2,
-
-  infinite: false,
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
 });
+
+function fadeInDownNavbar() {
+  const navbar = document.getElementById("navbar");
+
+  navbar.classList.add("opacity-0", "-translate-y-full");
+
+  if (!sessionStorage.getItem("navbarAnimationPlayed")) {
+    navbar.style.transition = "opacity 700ms ease-in, transform 700ms ease-out";
+
+    setTimeout(() => {
+      navbar.classList.remove("opacity-0", "-translate-y-full");
+      navbar.classList.add("opacity-100", "translate-y-0");
+    }, 50);
+
+    sessionStorage.setItem("navbarAnimationPlayed", "true");
+  } else {
+    navbar.classList.add("opacity-100", "translate-y-0");
+  }
+}
+
+window.onload = fadeInDownNavbar;

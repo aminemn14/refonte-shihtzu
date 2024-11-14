@@ -9,7 +9,7 @@
 
     <script src="tailwind.config.js"></script>
     <script src="src/js/scroll.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css"
@@ -20,14 +20,14 @@
     <div id="warning"></div>
     <div
       id="navbar"
-      style="
-        z-index: 1000 !important;
-        position: sticky !important;
-        top: 0 !important;
-      "
+      class="opacity-0 -translate-y-full"
+      style="z-index: 1000; position: sticky; top: 0"
     ></div>
     <main>
-      <section id="contact-section" class="py-24">
+      <section
+        id="contact-section"
+        class="py-24 opacity-0 transform translate-y-8 transition-opacity transition-transform duration-1000 ease-out"
+      >
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="grid lg:grid-cols-2 grid-cols-1 gap-x-24">
             <div class="flex items-center lg:mb-0 mb-10">
@@ -142,7 +142,7 @@
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.016387041845!2d7.048901409376819!3d48.68605134316895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4794118b3f9a7e09%3A0x8e22afd0155c9832!2s7%20Rte%20de%20Nitting%2C%2057400%20Hesse!5e0!3m2!1sfr!2sfr!4v1731571416827!5m2!1sfr!2sfr"
                       width="300"
                       height="200"
-                      class="border-0"
+                      class="border-0 rounded-lg"
                       allowfullscreen=""
                       loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade"
